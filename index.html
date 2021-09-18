@@ -1,30 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday bulbul</title>
-    <link rel="stylesheet" href="chloe.css">
-    
-</head>
+ <!DOCTYPE html>
+<html>
+    <head>
+       <title>Birthday Girl</title>
+       <link href="style.css" rel="stylesheet">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="description" content="">
+       <meta name="author" content="">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
 <body>
-    <img src="bwall2.jpg">
-    <div class="firstpage">
-        <marquee style="font-family: 'Acme', sans-serif;
-        font-family: 'Courgette', cursive;">Today is a special day !!</marquee>
+
+  <script>
+    var audio, playbtn, mutebtn, seek_bar;
+    function initAudioPlayer(){
+      audio = new Audio();
+      audio.src = "music2.mp3";
+      audio.loop = true;
+      audio.play();
+      // Set object references
+      playbtn = document.getElementById("playpausebtn");
+      mutebtn = document.getElementById("mutebtn");
+      // Add Event Handling
+      playbtn.addEventListener("click",playPause);
+      mutebtn.addEventListener("click", mute);
+      // Functions
+      function playPause(){
+        if(audio.paused){
+            audio.play();
+            playbtn.style.backgroundImage = "url(img/pause.png)";
+          } else {
+            audio.pause();
+            playbtn.style.backgroundImage = "url(img/play.png)";
+          }
+      }
+    }
+    window.addEventListener("load", initAudioPlayer);
+    </script>
+  <!-- audio player javascript -->
+
+
+    <div class="back"></div>
+    <div class="area">
+        <div class="one">
+            Happy Birthday
+        </div>
+        <div class="name">MAMA</div>
+
     </div>
-    <br>
-    <div class="clect" style="font-family: 'Acme', sans-serif;
-    font-family: 'Courgette', cursive;">
-        click here
+    <div class="imgarea">
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="one.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="two.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="three.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="four.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="five.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="six.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="seven.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="eight.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="nine.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="ten.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="eleven.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="twelve.jpeg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="thirteen.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="two1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="three1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="four1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="five1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="six1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="seven1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="eight1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="nine1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img right">
+            <div data-aos="zoom-in">
+                <img src="ten1.jpg" alt="">
+            </div>
+        </div>
+        <div class="img left">
+            <div data-aos="zoom-in">
+                <img src="eleven1.jpg" alt="">
+            </div>
+        </div>
     </div>
-    <br>
-    <div class="redirect">
-        <a href="chloe2.html" target="_blank">
-            <img src="click.png" alt="chloe">
-        </a>
-    </div>
-    
-    
+    <script>
+        AOS.init(0);
+      </script>
 </body>
 </html>

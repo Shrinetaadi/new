@@ -1,2 +1,2 @@
-# MamaBirthday
-wishes
+# Birthday
+Birthday Wish

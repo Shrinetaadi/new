@@ -1,173 +1,137 @@
- <!DOCTYPE html>
-<html>
-    <head>
-       <title>Birthday Girl</title>
-       <link href="style.css" rel="stylesheet">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <meta name="description" content="">
-       <meta name="author" content="">
-       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    
+        body,h1 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        body {
+            background-image: url('cover.jpeg');
+            min-height: 100%;
+            background-position: center;
+            background-size: auto;
+            background-attachment: relative;
+            color: #ffffff;
+
+        }
+        .btn-custom {
+            background: none;
+            border: 2px solid #ffffff;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #ffffff;
+            border-radius: 8px;
+        }
+
+        .btn-custom:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .main-content {
+            max-height: 80%;
+            overflow-y: scroll;
+        }
+
+    </style>
+</head>
 <body>
 
-  <script>
-    var audio, playbtn, mutebtn, seek_bar;
-    function initAudioPlayer(){
-      audio = new Audio();
-      audio.src = "music2.mp3";
-      audio.loop = true;
-      audio.play();
-      // Set object references
-      playbtn = document.getElementById("playpausebtn");
-      mutebtn = document.getElementById("mutebtn");
-      // Add Event Handling
-      playbtn.addEventListener("click",playPause);
-      mutebtn.addEventListener("click", mute);
-      // Functions
-      function playPause(){
-        if(audio.paused){
-            audio.play();
-            playbtn.style.backgroundImage = "url(img/pause.png)";
-          } else {
-            audio.pause();
-            playbtn.style.backgroundImage = "url(img/play.png)";
-          }
-      }
-    }
-    window.addEventListener("load", initAudioPlayer);
+    <script type="text/javascript">
+        if(!navigator.onLine){
+            if(confirm('Seems like you are not connected to the internet...\n\n Make sure you have and active internet connection and try again...'))
+            { window.location.reload();}
+        }
     </script>
-  <!-- audio player javascript -->
 
+    <div class="w3-display-topleft w3-padding-large w3-xlarge" id="displaydate"></div>
 
-    <div class="back"></div>
-    <div class="area">
-        <div class="one">
-            Happy Birthday
-        </div>
-        <div class="name">MAMA</div>
-
+    <div class="w3-display-middle main-content" id="content1">
+        <h1 class="w3-jumbo w3-animate-top w3-center" id="wish">Happy Birthday Shubhi! </h1>
+        
+        <p class="w3-large w3-center" id="wish2">
+            <br> A tad bit too early. <br><br>
+            <button type="button" class="btn-custom" name="button" onclick="opengift()">Open Gift</button>
+        </p>
     </div>
-    <div class="imgarea">
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="one.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="two.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="three.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="four.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="five.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="six.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="seven.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="eight.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="nine.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="ten.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="eleven.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="twelve.jpeg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="thirteen.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="two1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="three1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="four1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="five1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="six1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="seven1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="eight1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="nine1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img right">
-            <div data-aos="zoom-in">
-                <img src="ten1.jpg" alt="">
-            </div>
-        </div>
-        <div class="img left">
-            <div data-aos="zoom-in">
-                <img src="eleven1.jpg" alt="">
-            </div>
-        </div>
+
+    <div class="w3-display-middle main-content" id="content2">
+        <p class="w3-large">B'day Note</p>
+        <audio controls src="0.aac"></audio>
+        <p class="w3-large">With Or Without You </p>
+        <audio controls src="With Or Without You (U2).mp3"></audio>
+        <p class="w3-large">Aaoge Tum Kabhi </p>
+        <audio controls src="Aaoge Tum Kabhi.mp3"></audio>
+        <p class="w3-large">I don't want to miss a thing </p>
+        <audio controls src="I don't want to miss a thing.mp3"></audio>
+        <p class="w3-large">Leaving On A Jet Plane</p>
+        <audio controls src="Leaving On A Jet Plane.mp3"></audio>
+        <p class="w3-large">Inside Of Love</p>
+        <audio controls src="Inside Of Love.mp3"></audio>
+        <p class="w3-large">You And Me </p>
+        <audio controls src="You And Me.mp3"></audio>
+        <p class="w3-large">Tere Jeya Hor Disda </p>
+        <audio controls src="Tere Jeya Hor Disda.mp3"></audio>
+        <p class="w3-large">Heartbeats</p>
+        <audio controls src="Heartbeats.mp3"></audio>
+        <p class="w3-large">Apocalypse </p>
+        <audio controls src="Apocalypse.mp3"></audio>
+        <p class="w3-large">Wish you were here </p>
+        <audio controls src="Wish you were here.mp3"></audio>
     </div>
-    <script>
-        AOS.init(0);
+
+
+
+    <script type="text/javascript">
+        document.getElementById("content1").style.display="block";
+        document.getElementById("content2").style.display="none";
+        var d = new Date();  var m = new Date();  var y = new Date();  var dd = d.getDate();  var mm = m.getMonth()+1;  var yy = y.getFullYear();
+        var month; var sup;
+        switch (dd) { case 1: sup="st"; break; case 2: sup="nd"; break; case 3: sup="rd"; break; default: sup="th"; }
+        switch (mm) {
+          case 0: month="January"; break; case 1: month="February"; break; case 2: month="March"; break;
+          case 3: month="April"; break; case 4: month="May"; break; case 5: month="June"; break;
+          case 6: month="July"; break; case 7: month="August"; break; case 8: month="September"; break;
+          case 9: month="October"; break; case 10: month="November"; break; case 11: month="December"; break;
+        }
+        var cdate=month+" "+dd+"<sup>"+sup+"</sup>"+", "+yy;
+        document.getElementById('displaydate').innerHTML=cdate;
+        if(dd==13&&mm==5) {
+          <!-- Replace date with whatever needed-->
+          document.getElementById('wish').innerHTML='Happy Birthday Shubhi!';
+        }
+        else if (dd>13&&mm==5) {
+          <!-- Replace date with whatever needed-->
+          document.getElementById('wish').innerHTML='Belated Happy Birthday Shubhi!';
+        }
+        else {
+          document.getElementById('remaining').style.display="none";
+          document.getElementById('wish2').innerHTML='See you on your birthday!';
+        }
+    
+        function opengift() {
+            if(dd!=13&&mm==5) {alert("It's not time yet!\nPlease check back at May 13, 00:00 Hrs"); return;}
+            document.getElementById("content1").style.display="none";            
+            document.getElementById("content2").style.display="block";
+        }
+    
       </script>
+
+    <div class="w3-display-bottomright w3-padding-large w3-text-white">
+        Debargha Roy
+    </div>
+    
 </body>
 </html>
